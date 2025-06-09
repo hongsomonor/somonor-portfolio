@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    width: 40%;
+    background-color: #09122C;
+    border-radius: 40px;
+}
+
+li ,nav a , #home a , #about a , #project a{
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 10px;
+}
+
+nav ul li {
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav ul li.active{
+    background-color: rgb(45, 43, 43);
+    color: #fff;
+}
+
+nav ul li a{
+    color: gray;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover a{
+    color: #fff;
+}
+
+nav ul li a.active {
+    color: #fff;
+}
+
+section {
+    min-height: 100vh;
+    background: #1f242d;
+    /* font-weight: 700; */
+    /* font-size: 100px; */
+    color: #fff;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .profile-blog{
+    /* background-color: aqua; */
+    width: 800px;
+    text-align: center;
+}
+
+#home .profile-blog span{
+    font-style: italic;
+}
+
+#home .profile-blog p{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+}
+
+#home .profile-blog img{
+    border-radius: 50%;
+}
+
+#home .profile-blog h2{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.icon-blog{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.icon-blog a i{
+    font-size: 20px;
+}
+
+.icon-blog button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: 	#eae9ee;
+    margin: 0 5px;
+    border: none;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about h2{
+    margin-top: 90px;
+}
+
+#about .card{
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+#about .card img{
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#about .card p{
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+#projects {
+    padding-top: 120px;
+}
+
+#projects h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#projects .card{
+    background-color: rgba(79, 83, 83, 0.775);
+    border-radius: 10px;
+    display: flex;
+    width: 40%;
+    padding: 30px 0px 30px 30px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+#projects .card .left .subject{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#projects .card .left .subject div{
+    margin: 0 5px;
+    padding: 7px;
+    background-color: #1a191c;
+    border-radius: 15px;
+    font-size: 13px;
+    color: white;
+}
+
+#projects .card .left p{
+    color: rgb(160, 154, 154);
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+#project .card .left h3{
+    font-size: 25px;
+}
+
+#projects .card:last-child{
+    padding: 30px 30px 30px 0px;
+}
+
+#projects .card:last-child .left{
+    padding-left: 10px;
+}
+
+#contact{
+    padding-top: 250px;
+}
+
+
+#contact .card{
+    /* background-color: aqua; */
+    width:700px;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+#contact .card h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#contact .card p{
+    text-align: center;
+}
+
+#contact .card input{
+    margin-top: 40px;
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#contact .card textarea{
+    padding: 10px;
+    resize: none;
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#contact .card button{
+    background-color: rgb(68, 68, 68);
+    color: #fff;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#contact .card p a{
+    color: #fff;
+}
+
+#skills{
+    text-align: center;
+    padding-top: 150px;
+}
+
+#skills .btn-blog{
+    margin-top: 30px;
+}
+
+#skills .btn-blog button{
+    margin: 0 5px;
+    padding: 15px 25px;
+    font-size: 15px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: rgb(68, 68, 68);
+    border: none;
+}
+
+#skills .btn-blog .btn-{
+    padding: 10px;
+}
+
+#experience{
+    padding-top: 150px;
+}
+
+#experience .blog1{
+    /* background-color: rgb(68, 68, 68); */
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
+#experience .blog1 .text-blog{
+    background-color: rgb(68, 68, 68);
+    padding: 30px;
+    line-height: 20px;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
+#experience .blog1 .text-blog .title{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#experience .blog1 .text-blog .txt{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#experience .blog1 .icon-blog{
+    margin-top: 0;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+
+ #experience .blog1 .date-blog{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+/*
+#experience > .blog1:nth-child(2) > .text-blog{
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+#experience > .blog1:nth-child(2) > .icon-blog{
+    
+} */
+
+#experience .blog2{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    /* margin: 0 auto; */
+    margin-left: 310px;
+}
+
+#experience .blog2 .text-blog{
+    background-color: rgb(68, 68, 68);
+    padding: 30px;
+    line-height: 20px;
+    border: solid 1px white;
+    border-radius: 10px;
+    margin-left: 50px;
+    /* float: right; */
+    /* margin-left: 520px; */
+}
+
+#experience .blog2 .text-blog .title{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#experience .blog2 .text-blog .txt{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#experience .blog2 .icon-blog{
+    margin-top: 0;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border: 5px solid white;
+    border-radius: 50%;
+    /* margin-left: 150px; */
+}
+
+#experience .blog2 .date-blog{
+    margin-right: 20px;
+    margin-top: 30px;
+}
